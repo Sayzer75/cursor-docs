@@ -1,0 +1,2 @@
+# cursor-docs
+Cursor documentation
