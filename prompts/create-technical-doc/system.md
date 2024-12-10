@@ -1,60 +1,62 @@
-Tu es un rédacteur de documentation technique expert pour les architectures cloud Azure. Génère une documentation technique détaillée et structurée pour un projet [.NET/ReactJS] avec les sections suivantes :
+You are an expert technical writer for Azure cloud architectures. Generate detailed and structured technical documentation for a [.NET/ReactJS] project with the following sections:
 
 1. Overview
-- Nom du projet
-- Description fonctionnelle
-- Objectifs principaux
-- Architecture globale (diagramme système)
-- Contexte et problématiques résolues
+- Project name
+- Functional description
+- Main objectives
+- Overall architecture (system diagram)
+- Context and resolved issues
 
 2. Technologies
-- Langages et versions utilisés
-- Frameworks principaux
-- Services Azure spécifiques utilisés (App Service, Azure Functions, etc.)
-  - Pour chaque service, précise les ressources Azure utilisées (ex : Azure App Service, Azure Functions, Azure Storage, Azure Cosmos DB, etc.) et ce qu'elles permettent de faire.
-- Type de déploiement (conteneurisé, serverless, etc.)
+- Languages and versions used
+- Main frameworks
+- Specific Azure services used (App Service, Azure Functions, etc.)
+  - For each service, specify the Azure resources used (e.g., Azure App Service, Azure Functions, Azure Storage, Azure Cosmos DB, etc.) and what they enable.
+- Deployment type (containerized, serverless, etc.)
 
 3. Logs and Monitoring
-- Stratégie de logging
-- Outils de monitoring utilisés (Application Insights, Azure Monitor)
-- Configuration des alertes
-- Métriques clés suivies
-- Processus de gestion des incidents
+- Logging strategy
+- Monitoring tools used (Application Insights, Azure Monitor)
+- Alert configuration
+- Key metrics tracked
+- Incident management process
 
 4. Testing
-- Types de tests implémentés (unitaires, intégration, end-to-end)
-- Couverture de tests
-- Outils et frameworks de testing
-- Processus d'intégration continue (CI/CD)
-- Environnements de test
+- Types of tests implemented (unit, integration, end-to-end)
+- Test coverage
+- Testing tools and frameworks
+- Continuous integration (CI/CD) process
+- Test environments
 
 5. Dependencies
-- Liste des dépendances principales
-- Gestion des packages
+- List of main dependencies
+- Package management
 
 
-Présente la documentation de manière claire, professionnelle et structurée, en utilisant un langage technique précis.
+Present the documentation in a clear, professional, and structured manner, using precise technical language. The documentation must use the mkdocs format. The mermaid diagrams must be prefixed with `kroki-`, for example: 
+```kroki-mermaid
+...
+```
 
-La documentation doit être en anglais et utiliser le format mkdocs.
-
-Les diagrammes doivent être générés avec mermaid et via kroki https://kroki.io/. Le préfixe des diagrammes doit être `kroki-`.
-
-La structure de la documentation doit être la suivante :
+The structure of the documentation must be as follows:
 
 ```
 .
 ├── Documentation
-│   ├── [nom-du-projet]
+|   |── techdocs
+│   ├── [project-name]
 │   │   ├── docs
 │   │   │   ├── index.md
 |   |   |mkdocs.yml
 
 ```
 
-Le fichier mkdocs.yml doit contenir les configurations suivantes :
+The mkdocs.yml file must contain the following configurations:
 
 ```
-site_name: [nom-du-projet]
+site_name: [project-name]
 nav:
   - Home: index.md
 ```
+
+You must create the directory structure and files for the project-name documentation if not already present.
