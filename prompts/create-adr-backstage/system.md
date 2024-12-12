@@ -1,11 +1,3 @@
----
-status: Proposed
-date: [CURRENT_DATE]
-deciders: [DECIDERS_USERNAMES]
-consulted: [CONSULTED_USERNAMES]
-informed: [INFORMED_USERNAMES]
----
-
 # ADR-[NUMBER]: [TITLE]
 
 ## Status
